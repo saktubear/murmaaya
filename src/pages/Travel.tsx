@@ -3,8 +3,8 @@ import ArticleCard from "@/components/ArticleCard";
 import { articles } from "@/data/articles";
 
 const Travel = () => {
-  const travelArticles = articles.filter(article => 
-    article.category.toLowerCase() === "travel"
+  const buildArticles = articles.filter(article => 
+    article.category.toLowerCase() === "builds"
   );
 
   return (
@@ -12,21 +12,19 @@ const Travel = () => {
       <Header />
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Hero Section */}
         <div className="mb-16 text-center space-y-6">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slide-down">
-            Travel & Exploration
+            Build Ideas & Tutorials
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-slide-up stagger-1">
-            Journey through inspiring destinations, cultural insights, and mindful travel practices. 
-            Discover how to explore the world with intention, curiosity, and respect for local communities and environments.
+            Get inspired with epic build ideas, step-by-step construction guides, and architectural tips. 
+            From medieval castles to modern mansions, take your builds to the next level.
           </p>
         </div>
 
-        {/* Articles Grid */}
         <section>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {travelArticles.map((article, index) => (
+            {buildArticles.map((article, index) => (
               <div key={article.id} className={`animate-slide-up stagger-${Math.min(index + 2, 6)}`}>
                 <ArticleCard {...article} />
               </div>
@@ -34,20 +32,19 @@ const Travel = () => {
           </div>
         </section>
 
-        {/* Travel Philosophy */}
         <section className="mt-16 rounded-2xl bg-card p-8 md:p-12">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Our Travel Philosophy</h2>
+            <h2 className="text-3xl font-bold mb-6">Building Philosophy</h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Travel is more than visiting new places—it's about opening ourselves to new perspectives, cultures, 
-                and ways of being. We believe in slow, intentional travel that prioritizes meaningful connections 
-                over checking off bucket list items.
+                Building in Minecraft is an art form. Every block placement is a creative choice, and the 
+                possibilities are literally infinite. We believe great builds come from understanding both 
+                aesthetics and functionality.
               </p>
               <p>
-                Whether you're exploring your own backyard or venturing to distant lands, we share stories and 
-                insights that inspire mindful exploration, sustainable practices, and genuine cultural exchange. 
-                Join us in discovering that the journey itself is often the most valuable destination.
+                Our guides cover everything from basic house designs to massive megastructures. 
+                Whether you build in Creative or Survival, we'll help you develop your own style 
+                and create structures you're proud of.
               </p>
             </div>
           </div>

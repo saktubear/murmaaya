@@ -8,100 +8,94 @@ const About = () => {
       <Header />
       
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Hero Section */}
         <div className="mb-16 text-center space-y-6">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slide-down">
-            About Perspective
+            About Saktu
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed animate-slide-up stagger-1">
-            A space for exploring ideas, finding inspiration, and discovering new ways of seeing the world.
+            Your go-to source for Minecraft guides, builds, and community content.
           </p>
         </div>
 
-        {/* Story Section */}
         <section className="mb-16 space-y-6 text-muted-foreground animate-slide-up stagger-2">
           <h2 className="text-3xl font-bold text-foreground mb-6">Our Story</h2>
           <p>
-            Perspective began with a simple question: What if we could create a space where thoughtful ideas, 
-            meaningful stories, and practical wisdom come together to enrich our daily lives?
+            Saktu started with a simple idea: create the best Minecraft resource hub for players of all skill levels — 
+            from first-night survivors to veteran redstone engineers.
           </p>
           <p>
-            In a world saturated with information, we felt the need for something different—a publication that 
-            prioritizes depth over speed, quality over quantity, and authentic connection over viral content. 
-            Perspective is our answer to that need.
+            We noticed that great Minecraft knowledge was scattered across countless videos and forums. 
+            Saktu brings it all together in well-crafted, easy-to-follow guides that help you master every 
+            aspect of the game.
           </p>
           <p>
-            We explore topics that matter: wellness practices that actually work, travel experiences that transform 
-            us, creative pursuits that bring joy, and personal growth strategies that lead to lasting change. 
-            Our approach is grounded in curiosity, backed by research, and enriched by lived experience.
+            Whether you're looking for survival tips, build inspiration, redstone tutorials, or server setup guides, 
+            Saktu has you covered. We're players first, writers second — and that passion shows in every article.
           </p>
         </section>
 
-        {/* Mission Section */}
         <section className="mb-16 rounded-2xl bg-card p-8 md:p-12">
           <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
           <div className="space-y-4 text-muted-foreground">
             <p>
-              We believe that how we see the world shapes how we experience it. Perspective is dedicated to 
-              offering fresh viewpoints, practical insights, and inspiring stories that help readers:
+              We believe Minecraft is more than a game — it's a platform for creativity, learning, and community. 
+              Saktu is dedicated to helping players:
             </p>
             <ul className="space-y-3 ml-6">
               <li className="flex items-start">
-                <span className="mr-3 mt-1">•</span>
-                <span>Cultivate mindful, balanced lifestyles that prioritize wellbeing</span>
+                <span className="mr-3 mt-1">⛏️</span>
+                <span>Master survival mechanics and thrive in any world</span>
               </li>
               <li className="flex items-start">
-                <span className="mr-3 mt-1">•</span>
-                <span>Explore the world with curiosity and respect</span>
+                <span className="mr-3 mt-1">🏗️</span>
+                <span>Build incredible structures from castles to modern cities</span>
               </li>
               <li className="flex items-start">
-                <span className="mr-3 mt-1">•</span>
-                <span>Express themselves authentically through creative pursuits</span>
+                <span className="mr-3 mt-1">🔴</span>
+                <span>Understand redstone and create amazing contraptions</span>
               </li>
               <li className="flex items-start">
-                <span className="mr-3 mt-1">•</span>
-                <span>Embrace personal growth as a lifelong journey</span>
+                <span className="mr-3 mt-1">👥</span>
+                <span>Connect with the Minecraft community and play together</span>
               </li>
             </ul>
           </div>
         </section>
 
-        {/* Values Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8">Our Values</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="p-6 rounded-xl bg-muted">
-              <h3 className="text-xl font-semibold mb-3">Authenticity</h3>
+              <h3 className="text-xl font-semibold mb-3">Accuracy</h3>
               <p className="text-muted-foreground">
-                We share real experiences, honest reflections, and genuine insights—not curated perfection.
+                Every guide is tested in-game. We verify mechanics, coordinates, and strategies before publishing.
               </p>
             </div>
             <div className="p-6 rounded-xl bg-muted">
-              <h3 className="text-xl font-semibold mb-3">Thoughtfulness</h3>
+              <h3 className="text-xl font-semibold mb-3">Accessibility</h3>
               <p className="text-muted-foreground">
-                Every article is carefully researched, thoughtfully written, and designed to add real value.
+                Our content is written for all skill levels. Beginners and experts alike will find value here.
               </p>
             </div>
             <div className="p-6 rounded-xl bg-muted">
-              <h3 className="text-xl font-semibold mb-3">Inclusivity</h3>
+              <h3 className="text-xl font-semibold mb-3">Community</h3>
               <p className="text-muted-foreground">
-                We welcome diverse perspectives and believe everyone's journey deserves respect and representation.
+                We celebrate the Minecraft community and welcome contributions from players worldwide.
               </p>
             </div>
             <div className="p-6 rounded-xl bg-muted">
-              <h3 className="text-xl font-semibold mb-3">Sustainability</h3>
+              <h3 className="text-xl font-semibold mb-3">Up-to-Date</h3>
               <p className="text-muted-foreground">
-                We promote practices that are sustainable for individuals, communities, and the planet.
+                We keep guides current with the latest Minecraft updates, snapshots, and version changes.
               </p>
             </div>
           </div>
         </section>
 
-        {/* CTA Section */}
         <section className="text-center py-12 rounded-2xl bg-card">
-          <h2 className="text-3xl font-bold mb-4">Join Our Community</h2>
+          <h2 className="text-3xl font-bold mb-4">Join the Community</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Subscribe to receive our latest articles, insights, and inspiration directly in your inbox.
+            Subscribe to get the latest Minecraft guides and tips delivered to your inbox.
           </p>
           <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8">
             <Mail className="mr-2 h-4 w-4" />
