@@ -1,60 +1,26 @@
-import { Instagram, Facebook, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
     <section className="relative rounded-[2.5rem] overflow-hidden bg-muted my-12 animate-fade-in">
-      <div className="grid md:grid-cols-2 gap-6 md:gap-12 p-6 md:p-12 lg:p-16">
-        {/* Left side - Image */}
-        <div className="relative aspect-[4/3] md:aspect-auto rounded-[2rem] overflow-hidden animate-scale-in">
-          <img
-            src="https://images.unsplash.com/photo-1587573089734-09cb69c0f2b4?w=1920&q=80"
-            alt="Minecraft world"
-            className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
-          />
-        </div>
-
-        {/* Right side - Content */}
-        <div className="flex flex-col justify-center space-y-6 md:space-y-8">
-          <div className="space-y-4 md:space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight animate-slide-down">
-              Your Minecraft Universe
-            </h1>
-            <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl animate-slide-up stagger-1">
-              Welcome to Saktu — your hub for Minecraft tips, epic builds, redstone contraptions, 
-              survival guides, and everything blocky. Explore, craft, and conquer.
-            </p>
-          </div>
-
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 md:gap-6 pt-4 animate-slide-up stagger-2">
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-4 md:px-10 md:py-6 text-base font-medium transition-all hover:scale-105 w-full sm:w-auto">
-              Join Now
+      <div className="flex flex-col items-center justify-center text-center py-20 md:py-32 px-6">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.1] tracking-tight animate-slide-down mb-4">
+          Saktu
+        </h1>
+        <p className="text-muted-foreground text-lg md:text-xl leading-relaxed animate-slide-up stagger-1 mb-8">
+          Minecraft PvP • 16 Years Old • Chill
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 animate-slide-up stagger-2">
+          <a href="#socials">
+            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-4 md:px-10 md:py-6 text-base font-medium transition-all hover:scale-105">
+              Social Links
             </Button>
-
-            <div className="flex items-center gap-4">
-              <a
-                href="#instagram"
-                className="w-12 h-12 rounded-full border-2 border-border hover:border-primary hover:bg-muted transition-all flex items-center justify-center hover:scale-110"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href="#facebook"
-                className="w-12 h-12 rounded-full border-2 border-border hover:border-primary hover:bg-muted transition-all flex items-center justify-center hover:scale-110"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href="#linkedin"
-                className="w-12 h-12 rounded-full border-2 border-border hover:border-primary hover:bg-muted transition-all flex items-center justify-center hover:scale-110"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
-            </div>
-          </div>
+          </a>
+          <a href="#minecraft">
+            <Button variant="outline" className="rounded-full px-8 py-4 md:px-10 md:py-6 text-base font-medium transition-all hover:scale-105">
+              Minecraft Info
+            </Button>
+          </a>
         </div>
       </div>
     </section>
