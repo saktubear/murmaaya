@@ -12,13 +12,12 @@ interface ArticleCardProps {
 const ArticleCard = ({ id, title, category, date, image, size = "small" }: ArticleCardProps) => {
   const getCategoryClass = (cat: string) => {
     const normalized = cat.toLowerCase();
-    if (normalized.includes("financ")) return "tag-financing";
-    if (normalized.includes("lifestyle")) return "tag-lifestyle";
+    if (normalized.includes("redstone")) return "tag-financing";
+    if (normalized.includes("survival")) return "tag-wellness";
+    if (normalized.includes("builds")) return "tag-travel";
     if (normalized.includes("community")) return "tag-community";
-    if (normalized.includes("wellness")) return "tag-wellness";
-    if (normalized.includes("travel")) return "tag-travel";
-    if (normalized.includes("creativ")) return "tag-creativity";
-    if (normalized.includes("growth")) return "tag-growth";
+    if (normalized.includes("mods")) return "tag-creativity";
+    if (normalized.includes("server")) return "tag-growth";
     return "tag-lifestyle";
   };
 
@@ -63,7 +62,7 @@ const ArticleCard = ({ id, title, category, date, image, size = "small" }: Artic
           </div>
         </div>
 
-        {/* Floating circular arrow button - positioned outside content overlay */}
+        {/* Floating circular arrow button */}
         <div className="absolute bottom-6 right-6 floating-button">
           <ArrowUpRight className="w-5 h-5" />
         </div>

@@ -21,7 +21,7 @@ const Index = () => {
         {/* Featured Articles Grid */}
         <section id="articles" className="py-12">
           <div className="flex items-center justify-between mb-12 animate-slide-up">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Featured Articles</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Latest Guides</h2>
             <a href="#all" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors px-4 py-2 rounded-full hover:bg-muted/60">
               View all →
             </a>
@@ -39,9 +39,9 @@ const Index = () => {
         {/* Newsletter Section */}
         <section className="my-20 rounded-[2.5rem] bg-card p-12 md:p-16 text-center animate-scale-in">
           <div className="max-w-2xl mx-auto space-y-8">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Stay inspired.</h2>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Stay blocky.</h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Subscribe to receive our latest articles and insights directly in your inbox.
+              Subscribe to get the latest Minecraft guides, build ideas, and tips delivered to your inbox.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
@@ -64,10 +64,10 @@ const Index = () => {
             <div>
               <h3 className="font-semibold mb-4">Explore</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="/wellness" className="hover:text-accent transition-colors">Wellness</a></li>
-                <li><a href="/travel" className="hover:text-accent transition-colors">Travel</a></li>
-                <li><a href="/creativity" className="hover:text-accent transition-colors">Creativity</a></li>
-                <li><a href="/growth" className="hover:text-accent transition-colors">Growth</a></li>
+                <li><a href="/wellness" className="hover:text-accent transition-colors">Survival</a></li>
+                <li><a href="/travel" className="hover:text-accent transition-colors">Builds</a></li>
+                <li><a href="/creativity" className="hover:text-accent transition-colors">Redstone</a></li>
+                <li><a href="/growth" className="hover:text-accent transition-colors">Community</a></li>
               </ul>
             </div>
             <div>
@@ -94,7 +94,7 @@ const Index = () => {
             </div>
           </div>
           <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-            <p>© 2025 Perspective. All rights reserved.</p>
+            <p>© 2025 Saktu. All rights reserved.</p>
           </div>
         </div>
       </footer>

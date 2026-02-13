@@ -8,8 +8,8 @@ const HeroSection = () => {
         {/* Left side - Image */}
         <div className="relative aspect-[4/3] md:aspect-auto rounded-[2rem] overflow-hidden animate-scale-in">
           <img
-            src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=1920&q=80"
-            alt="Hero"
+            src="https://images.unsplash.com/photo-1587573089734-09cb69c0f2b4?w=1920&q=80"
+            alt="Minecraft world"
             className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
           />
         </div>
@@ -18,11 +18,11 @@ const HeroSection = () => {
         <div className="flex flex-col justify-center space-y-6 md:space-y-8">
           <div className="space-y-4 md:space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight animate-slide-down">
-              Journey Through Life's Spectrum
+              Your Minecraft Universe
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl animate-slide-up stagger-1">
-              Welcome to Perspective's Blog: A Realm of Reflection, Inspiration, and Discovery. Where Words Illuminate
-              Paths of Meaning and Thoughts Unravel the Mysteries of Life's Spectrum.
+              Welcome to Saktu — your hub for Minecraft tips, epic builds, redstone contraptions, 
+              survival guides, and everything blocky. Explore, craft, and conquer.
             </p>
           </div>
 
