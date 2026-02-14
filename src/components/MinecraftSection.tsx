@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ReactSkinview3d } from "react-skinview3d";
 import { WalkingAnimation } from "skinview3d";
+import panCape from "@/assets/pan-cape.png";
 
 const tiers = [
   { mode: "Diamond SMP", rank: "HT5", active: true },
@@ -34,7 +35,7 @@ const MinecraftSection = () => {
           <div className="w-48 h-64 mb-6">
             <ReactSkinview3d
               skinUrl="https://minotar.net/skin/Vorz_"
-              capeUrl="https://textures.minecraft.net/texture/eec3cabfaee34909bf839fa9131461ba929c2ca152d9a4699c1a41bfcbba3a"
+              capeUrl={panCape}
               height={256}
               width={192}
               onReady={({ viewer }) => {

@@ -94,10 +94,16 @@ All colors MUST be HSL.
   }
 
   /* Light theme texture */
-  body:not(.dark) {
+  :root:not(.dark) body,
+  body:not(.dark *) {
     background-image: 
-      radial-gradient(circle at 1px 1px, hsl(var(--muted-foreground) / 0.07) 1px, transparent 0);
-    background-size: 24px 24px;
+      linear-gradient(135deg, hsl(var(--muted) / 0.4) 25%, transparent 25%),
+      linear-gradient(225deg, hsl(var(--muted) / 0.4) 25%, transparent 25%),
+      linear-gradient(45deg, hsl(var(--muted) / 0.4) 25%, transparent 25%),
+      linear-gradient(315deg, hsl(var(--muted) / 0.4) 25%, transparent 25%),
+      radial-gradient(circle at 1px 1px, hsl(var(--muted-foreground) / 0.06) 1px, transparent 0);
+    background-size: 40px 40px, 40px 40px, 40px 40px, 40px 40px, 20px 20px;
+    background-position: 0 0, 0 20px, 20px -20px, -20px 0px, 0 0;
   }
 
   .dark {
