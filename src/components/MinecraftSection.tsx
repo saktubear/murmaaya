@@ -1,53 +1,90 @@
 import skinImg from "@/assets/skin.png";
+import { motion } from "framer-motion";
+
+const tiers = [
+  { mode: "Diamond SMP", rank: "HT5", active: true },
+  { mode: "SMP PvP", rank: "N/A", active: false },
+  { mode: "Sword PvP", rank: "N/A", active: false },
+  { mode: "Bow PvP", rank: "HT5", active: true },
+];
 
 const MinecraftSection = () => {
   return (
-    <section id="minecraft" className="py-12 md:py-16 animate-fade-in">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 animate-slide-up">
-        Minecraft Info
-      </h2>
+    <section id="minecraft" className="py-12 md:py-16">
+      <motion.h2
+        className="text-3xl md:text-4xl font-bold text-center mb-12"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
+        Minecraft Stats
+      </motion.h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-        {/* Skin Card */}
-        <div className="rounded-[2rem] bg-card p-8 flex flex-col items-center text-center animate-slide-up stagger-1">
-          <img
+        <motion.div
+          className="rounded-[2rem] bg-card p-8 flex flex-col items-center text-center"
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, type: "spring" }}
+          whileHover={{ y: -5 }}
+        >
+          <motion.img
             src={skinImg}
-            alt="My Minecraft Skin"
-            className="w-40 h-40 object-contain mb-6 image-rendering-pixelated"
+            alt="Vimzo's Minecraft Skin"
+            className="w-40 h-40 object-contain mb-6"
             style={{ imageRendering: "pixelated" }}
+            whileHover={{ rotate: [0, -10, 10, -5, 0], scale: 1.1 }}
+            transition={{ duration: 0.5 }}
           />
-          <h3 className="text-2xl font-bold mb-2">IGN: Vimzo</h3>
-          <div className="flex flex-wrap gap-3 justify-center mt-4">
-            <span className="px-4 py-2 rounded-full text-sm font-medium bg-muted">SMP</span>
-            <span className="px-4 py-2 rounded-full text-sm font-medium bg-muted">Mace</span>
-            <span className="px-4 py-2 rounded-full text-sm font-medium bg-muted">Sword</span>
-            <span className="px-4 py-2 rounded-full text-sm font-medium bg-muted">UHC</span>
+          <h3 className="text-2xl font-bold mb-2">Vimzo</h3>
+          <p className="text-sm text-muted-foreground mb-4">Main account since day one</p>
+          <div className="flex flex-wrap gap-3 justify-center">
+            {["SMP", "Mace", "Sword", "UHC"].map((kit, i) => (
+              <motion.span
+                key={kit}
+                className="px-4 py-2 rounded-full text-sm font-medium bg-muted"
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 * i, duration: 0.3 }}
+                whileHover={{ scale: 1.1 }}
+              >
+                {kit}
+              </motion.span>
+            ))}
           </div>
-          <p className="text-xs text-muted-foreground mt-3">Main Kits</p>
-        </div>
+        </motion.div>
 
-        {/* PvP Tiers */}
-        <div className="rounded-[2rem] bg-card p-8 animate-slide-up stagger-2">
-          <h3 className="text-2xl font-bold mb-6">🏆 PvP Tiers</h3>
+        <motion.div
+          className="rounded-[2rem] bg-card p-8"
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, type: "spring" }}
+          whileHover={{ y: -5 }}
+        >
+          <h3 className="text-2xl font-bold mb-6">🏆 PvP Rankings</h3>
           <div className="space-y-4">
-            <div className="flex items-center justify-between p-4 rounded-xl bg-muted">
-              <span className="font-medium">Diamond SMP</span>
-              <span className="font-bold text-accent">HT5</span>
-            </div>
-            <div className="flex items-center justify-between p-4 rounded-xl bg-muted">
-              <span className="font-medium">SMP PvP</span>
-              <span className="font-bold text-muted-foreground">N/A</span>
-            </div>
-            <div className="flex items-center justify-between p-4 rounded-xl bg-muted">
-              <span className="font-medium">Sword PvP</span>
-              <span className="font-bold text-muted-foreground">N/A</span>
-            </div>
-            <div className="flex items-center justify-between p-4 rounded-xl bg-muted">
-              <span className="font-medium">Bow PvP</span>
-              <span className="font-bold text-accent">HT5</span>
-            </div>
+            {tiers.map((tier, i) => (
+              <motion.div
+                key={tier.mode}
+                className="flex items-center justify-between p-4 rounded-xl bg-muted"
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 * i, duration: 0.4 }}
+                whileHover={{ x: 5 }}
+              >
+                <span className="font-medium">{tier.mode}</span>
+                <span className={`font-bold ${tier.active ? "text-accent-foreground" : "text-muted-foreground"}`}>
+                  {tier.rank}
+                </span>
+              </motion.div>
+            ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

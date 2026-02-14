@@ -19,7 +19,7 @@ const Index = () => {
       <footer className="border-t border-border mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-sm text-muted-foreground">
-            <p>© 2025 Saktu. All rights reserved.</p>
+            <p>© 2025 Saktu · Made with ☕ and too many cps</p>
           </div>
         </div>
       </footer>
