@@ -34,6 +34,7 @@ const MinecraftSection = () => {
           <div className="w-48 h-64 mb-6">
             <ReactSkinview3d
               skinUrl="https://minotar.net/skin/Vorz_"
+              capeUrl="https://textures.minecraft.net/texture/eec3cabfaee34909bf839fa9131461ba929c2ca152d9a4699c1a41bfcbba3a"
               height={256}
               width={192}
               onReady={({ viewer }) => {
