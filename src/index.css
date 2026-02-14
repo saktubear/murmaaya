@@ -93,6 +93,13 @@ All colors MUST be HSL.
     --spacing: 0.25rem;
   }
 
+  /* Light theme texture */
+  body:not(.dark) {
+    background-image: 
+      radial-gradient(circle at 1px 1px, hsl(var(--muted-foreground) / 0.07) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+
   .dark {
     --background: 0 0% 15%;
     --foreground: 248 0.3% 98.4%;

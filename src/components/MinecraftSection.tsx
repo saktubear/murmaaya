@@ -1,5 +1,6 @@
-import skinImg from "@/assets/skin.png";
 import { motion } from "framer-motion";
+import { ReactSkinview3d } from "react-skinview3d";
+import { WalkingAnimation } from "skinview3d";
 
 const tiers = [
   { mode: "Diamond SMP", rank: "HT5", active: true },
@@ -30,15 +31,22 @@ const MinecraftSection = () => {
           transition={{ duration: 0.6, type: "spring" }}
           whileHover={{ y: -5 }}
         >
-          <motion.img
-            src={skinImg}
-            alt="Vimzo's Minecraft Skin"
-            className="w-40 h-40 object-contain mb-6"
-            style={{ imageRendering: "pixelated" }}
-            whileHover={{ rotate: [0, -10, 10, -5, 0], scale: 1.1 }}
-            transition={{ duration: 0.5 }}
-          />
-          <h3 className="text-2xl font-bold mb-2">Vimzo</h3>
+          <div className="w-48 h-64 mb-6">
+            <ReactSkinview3d
+              skinUrl="https://minotar.net/skin/Vorz_"
+              height={256}
+              width={192}
+              onReady={({ viewer }) => {
+                viewer.animation = new WalkingAnimation();
+                viewer.autoRotate = true;
+                viewer.autoRotateSpeed = 1.5;
+                viewer.zoom = 0.9;
+                viewer.background = null as any;
+              }}
+              className="rounded-xl"
+            />
+          </div>
+          <h3 className="text-2xl font-bold mb-2">Vortz_</h3>
           <p className="text-sm text-muted-foreground mb-4">Main account since day one</p>
           <div className="flex flex-wrap gap-3 justify-center">
             {["SMP", "Mace", "Sword", "UHC"].map((kit, i) => (

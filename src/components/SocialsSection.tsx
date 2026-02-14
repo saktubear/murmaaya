@@ -4,7 +4,7 @@ const socials = [
   { name: "YouTube", url: "https://www.youtube.com/@saktu_bear", emoji: "🎬", description: "@saktu_bear" },
   { name: "Discord", url: "https://discord.gg/dEbR7TyMSj", emoji: "💬", description: "Join the crew" },
   { name: "Instagram", url: "https://www.instagram.com/_saktu_/", emoji: "📸", description: "@_saktu_" },
-  { name: "NameMC", url: "https://namemc.com/profile/Vimzo.2", emoji: "🎮", description: "Vimzo" },
+  { name: "NameMC", url: "https://namemc.com/profile/Vorz_.1", emoji: "🎮", description: "Vortz_" },
 ];
 
 const SocialsSection = () => {
