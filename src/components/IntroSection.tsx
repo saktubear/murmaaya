@@ -44,7 +44,7 @@ const IntroSection = () => {
         <motion.div variants={item} whileHover={{ scale: 1.05, y: -5 }} className="rounded-2xl bg-card p-6 text-center transition-shadow hover:shadow-lg cursor-default">
           <span className="text-2xl mb-3 block">⚔️</span>
           <h3 className="font-bold text-lg mb-1">IGN</h3>
-          <p className="text-muted-foreground">Vimzo</p>
+          <p className="text-muted-foreground">Vortz_</p>
         </motion.div>
         <motion.div variants={item} whileHover={{ scale: 1.05, y: -5 }} className="rounded-2xl bg-card p-6 text-center transition-shadow hover:shadow-lg cursor-default">
           <span className="text-2xl mb-3 block">🏹</span>
