@@ -31,7 +31,7 @@ const SocialsSection = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.1 * index, duration: 0.5, type: "spring" }}
+            transition={{ delay: 0.15 * index, duration: 0.5 }}
             whileHover={{ scale: 1.05, y: -8 }}
           >
             <motion.span
