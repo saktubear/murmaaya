@@ -10,6 +10,12 @@ const item = {
   show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
+const cards = [
+  { emoji: "🎮", title: "Main Game", desc: "Minecraft Java Edition" },
+  { emoji: "⚔️", title: "IGN", desc: "Vortz_" },
+  { emoji: "🏹", title: "Specialty", desc: "Sword & SMP PvP" },
+];
+
 const IntroSection = () => {
   return (
     <section id="about" className="max-w-4xl mx-auto py-12 md:py-16 px-4">
@@ -23,10 +29,16 @@ const IntroSection = () => {
         <h2 className="text-3xl md:text-4xl font-bold leading-tight">
           Who's Saktu?
         </h2>
-        <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+        <motion.p
+          className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+        >
           Hey there 👋 I'm a 16 year old Minecraft player who spends way too much time in PvP arenas. 
           When I'm not clicking heads, I'm probably building or hanging out on SMPs with friends.
-        </p>
+        </motion.p>
       </motion.div>
 
       <motion.div
@@ -36,21 +48,29 @@ const IntroSection = () => {
         whileInView="show"
         viewport={{ once: true, margin: "-50px" }}
       >
-        <motion.div variants={item} whileHover={{ scale: 1.05, y: -5 }} className="rounded-2xl bg-card p-6 text-center transition-shadow hover:shadow-lg cursor-default">
-          <span className="text-2xl mb-3 block">🎮</span>
-          <h3 className="font-bold text-lg mb-1">Main Game</h3>
-          <p className="text-muted-foreground">Minecraft Java Edition</p>
-        </motion.div>
-        <motion.div variants={item} whileHover={{ scale: 1.05, y: -5 }} className="rounded-2xl bg-card p-6 text-center transition-shadow hover:shadow-lg cursor-default">
-          <span className="text-2xl mb-3 block">⚔️</span>
-          <h3 className="font-bold text-lg mb-1">IGN</h3>
-          <p className="text-muted-foreground">Vortz_</p>
-        </motion.div>
-        <motion.div variants={item} whileHover={{ scale: 1.05, y: -5 }} className="rounded-2xl bg-card p-6 text-center transition-shadow hover:shadow-lg cursor-default">
-          <span className="text-2xl mb-3 block">🏹</span>
-          <h3 className="font-bold text-lg mb-1">Specialty</h3>
-          <p className="text-muted-foreground">Sword & SMP PvP</p>
-        </motion.div>
+        {cards.map((card, i) => (
+          <motion.div
+            key={card.title}
+            variants={item}
+            whileHover={{ scale: 1.05, y: -8 }}
+            className="relative rounded-2xl bg-card p-6 text-center transition-shadow hover:shadow-lg cursor-default overflow-hidden group"
+          >
+            <motion.div
+              className="absolute inset-0 bg-primary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            />
+            <div className="relative">
+              <motion.span
+                className="text-2xl mb-3 block"
+                whileHover={{ scale: 1.3, rotate: [0, -10, 10, 0] }}
+                transition={{ duration: 0.4 }}
+              >
+                {card.emoji}
+              </motion.span>
+              <h3 className="font-bold text-lg mb-1">{card.title}</h3>
+              <p className="text-muted-foreground">{card.desc}</p>
+            </div>
+          </motion.div>
+        ))}
       </motion.div>
     </section>
   );
