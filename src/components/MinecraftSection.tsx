@@ -49,7 +49,7 @@ const MinecraftSection = () => {
             />
           </div>
           <h3 className="text-2xl font-bold mb-2">Vortz_</h3>
-          <p className="text-sm text-muted-foreground mb-4">Main account since day one</p>
+          <p className="text-sm text-muted-foreground mb-4">Main pvp kits</p>
           <div className="flex flex-wrap gap-3 justify-center">
             {["SMP", "Mace", "Sword", "UHC"].map((kit, i) => (
               <motion.span

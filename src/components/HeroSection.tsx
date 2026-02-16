@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import TypewriterText from "@/components/TypewriterText";
 import logoImg from "@/assets/logo.png";
 
 const floatingParticles = Array.from({ length: 12 }, (_, i) => ({
@@ -73,7 +74,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          16 y/o Minecraft PvP enthusiast · Diamond tier SMP player · Just vibing
+          16 y/o · <TypewriterText />
         </motion.p>
         <motion.div
           className="flex flex-col sm:flex-row gap-4"
