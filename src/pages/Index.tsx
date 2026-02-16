@@ -4,20 +4,18 @@ import HeroSection from "@/components/HeroSection";
 import IntroSection from "@/components/IntroSection";
 import MinecraftSection from "@/components/MinecraftSection";
 import SocialsSection from "@/components/SocialsSection";
-import ScrollProgress from "@/components/ScrollProgress";
-import CPSCounter from "@/components/CPSCounter";
+import CursorTrail from "@/components/CursorTrail";
 
 const Index = () => {
   return (
     <div className="min-h-screen animate-fade-in">
-      <ScrollProgress />
+      <CursorTrail />
       <Header />
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <HeroSection />
         <IntroSection />
         <MinecraftSection />
-        <CPSCounter />
         <SocialsSection />
       </main>
 
