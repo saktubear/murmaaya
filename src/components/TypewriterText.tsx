@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const phrases = [
   "Minecraft PvP enthusiast",
-  "Diamond tier SMP player",
+  "Minecraft PvPer",
   "Sword combo specialist",
   "Just vibing ✌️",
 ];
