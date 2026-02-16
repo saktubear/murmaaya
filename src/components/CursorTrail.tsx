@@ -8,7 +8,7 @@ interface Particle {
   emoji: string;
 }
 
-const emojis = ["⚔️", "🗡️", "🏹", "💎", "✨", "🔥", "⭐"];
+const emojis = ["⭐"];
 let nextId = 0;
 
 const CursorTrail = () => {
