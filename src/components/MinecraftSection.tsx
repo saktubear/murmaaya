@@ -25,7 +25,7 @@ const MinecraftSection = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
         <motion.div
-          className="rounded-[2rem] bg-gradient-to-br from-[hsl(45_30%_97%)] to-[hsl(35_25%_92%)] dark:from-card dark:to-card glow-card p-8 flex flex-col items-center text-center"
+          className="rounded-[2rem] bg-gradient-to-br from-[hsl(45_30%_97%)] to-[hsl(35_25%_92%)] dark:from-card dark:to-card border border-border/40 p-8 flex flex-col items-center text-center"
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -68,7 +68,7 @@ const MinecraftSection = () => {
         </motion.div>
 
         <motion.div
-          className="rounded-[2rem] bg-gradient-to-br from-[hsl(30_28%_97%)] to-[hsl(20_22%_92%)] dark:from-card dark:to-card glow-card p-8"
+          className="rounded-[2rem] bg-gradient-to-br from-[hsl(30_28%_97%)] to-[hsl(20_22%_92%)] dark:from-card dark:to-card border border-border/40 p-8"
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}

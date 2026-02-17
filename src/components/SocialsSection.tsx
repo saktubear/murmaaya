@@ -37,7 +37,7 @@ const SocialsSection = () => {
             href={social.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative rounded-2xl bg-gradient-to-br from-[hsl(40_28%_97%)] to-[hsl(28_22%_92%)] dark:from-card dark:to-card glow-card p-6 text-center card-hover block overflow-hidden"
+            className="group relative rounded-2xl bg-gradient-to-br from-[hsl(40_28%_97%)] to-[hsl(28_22%_92%)] dark:from-card dark:to-card border border-border/40 p-6 text-center card-hover block overflow-hidden"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

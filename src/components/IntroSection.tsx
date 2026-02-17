@@ -53,7 +53,7 @@ const IntroSection = () => {
             key={card.title}
             variants={item}
             whileHover={{ scale: 1.05, y: -8 }}
-            className="relative rounded-2xl bg-gradient-to-br from-[hsl(40_30%_97%)] to-[hsl(30_25%_93%)] dark:from-card dark:to-card glow-card p-6 text-center transition-shadow hover:shadow-lg cursor-default overflow-hidden group"
+            className="relative rounded-2xl bg-gradient-to-br from-[hsl(40_30%_97%)] to-[hsl(30_25%_93%)] dark:from-card dark:to-card border border-border/40 p-6 text-center transition-shadow hover:shadow-lg cursor-default overflow-hidden group"
           >
             <motion.div
               className="absolute inset-0 bg-primary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"

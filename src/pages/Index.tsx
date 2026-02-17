@@ -4,7 +4,6 @@ import HeroSection from "@/components/HeroSection";
 import IntroSection from "@/components/IntroSection";
 import MinecraftSection from "@/components/MinecraftSection";
 import SocialsSection from "@/components/SocialsSection";
-import ScreenshotGallery from "@/components/ScreenshotGallery";
 import CursorTrail from "@/components/CursorTrail";
 
 const Index = () => {
@@ -17,7 +16,6 @@ const Index = () => {
         <HeroSection />
         <IntroSection />
         <MinecraftSection />
-        <ScreenshotGallery />
         <SocialsSection />
       </main>
 
