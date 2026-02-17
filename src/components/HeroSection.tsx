@@ -14,7 +14,7 @@ const floatingParticles = Array.from({ length: 12 }, (_, i) => ({
 
 const HeroSection = () => {
   return (
-    <section className="relative rounded-[2.5rem] overflow-hidden bg-gradient-to-br from-[hsl(35_30%_94%)] to-[hsl(25_25%_90%)] dark:from-card dark:to-card border border-border/50 my-12">
+    <section className="relative rounded-[2.5rem] overflow-hidden bg-gradient-to-br from-[hsl(35_30%_94%)] to-[hsl(25_25%_90%)] dark:from-card dark:to-card glow-card my-12">
       {/* Animated floating particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {floatingParticles.map((p) => (
