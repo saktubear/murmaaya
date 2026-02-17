@@ -20,33 +20,33 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Warm, multicolored palette */
-    --background: 240 10% 4%;
-    --foreground: 220 20% 95%;
+    --background: 40 30% 96%;
+    --foreground: 265 4% 12.9%;
 
-    --card: 240 15% 10%;
-    --card-foreground: 220 20% 95%;
+    --card: 40 25% 99%;
+    --card-foreground: 265 4% 12.9%;
 
-    --popover: 240 15% 10%;
-    --popover-foreground: 220 20% 95%;
+    --popover: 40 25% 99%;
+    --popover-foreground: 265 4% 12.9%;
 
-    --primary: 270 60% 70%;
-    --primary-foreground: 240 20% 8%;
+    --primary: 266 4% 20.8%;
+    --primary-foreground: 248 0.3% 98.4%;
 
-    --secondary: 240 15% 15%;
-    --secondary-foreground: 220 20% 90%;
+    --secondary: 35 20% 93%;
+    --secondary-foreground: 266 4% 20.8%;
 
-    --muted: 240 12% 15%;
-    --muted-foreground: 220 15% 60%;
+    --muted: 35 15% 93%;
+    --muted-foreground: 257 4.6% 55.4%;
 
-    --accent: 200 50% 20%;
-    --accent-foreground: 200 80% 80%;
+    --accent: 35 20% 93%;
+    --accent-foreground: 266 4% 20.8%;
 
-    --destructive: 0 60% 55%;
+    --destructive: 27 24.5% 57.7%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 240 10% 16%;
-    --input: 240 15% 18%;
-    --ring: 270 50% 55%;
+    --border: 35 15% 88%;
+    --input: 35 15% 88%;
+    --ring: 257 4% 70.4%;
 
     --radius: 0.375rem;
 
@@ -94,13 +94,31 @@ All colors MUST be HSL.
   }
 
   body {
-    background-color: hsl(240 10% 4%);
+    background-color: hsl(40 30% 96%);
     background-image: 
-      linear-gradient(hsl(0 0% 100% / 0.035) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(0 0% 100% / 0.035) 1px, transparent 1px),
-      radial-gradient(ellipse at 50% 0%, hsl(270 60% 30% / 0.15) 0%, transparent 55%),
-      radial-gradient(ellipse at 80% 60%, hsl(210 70% 25% / 0.1) 0%, transparent 50%);
-    background-size: 48px 48px, 48px 48px, 100% 100%, 100% 100%;
+      radial-gradient(ellipse at 10% 20%, hsl(330 60% 88% / 0.5) 0%, transparent 50%),
+      radial-gradient(ellipse at 85% 15%, hsl(210 70% 88% / 0.5) 0%, transparent 45%),
+      radial-gradient(ellipse at 50% 60%, hsl(160 50% 85% / 0.4) 0%, transparent 50%),
+      radial-gradient(ellipse at 20% 80%, hsl(45 70% 85% / 0.5) 0%, transparent 45%),
+      radial-gradient(ellipse at 75% 75%, hsl(270 50% 88% / 0.4) 0%, transparent 45%),
+      linear-gradient(hsl(35 20% 75% / 0.18) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(35 20% 75% / 0.18) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 32px 32px, 32px 32px;
+    background-attachment: fixed;
+  }
+
+  .dark body {
+    background-color: hsl(240 20% 8%);
+    background-image: 
+      radial-gradient(ellipse at 15% 10%, hsl(270 60% 25% / 0.4) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 20%, hsl(200 70% 20% / 0.35) 0%, transparent 45%),
+      radial-gradient(ellipse at 50% 70%, hsl(330 50% 20% / 0.3) 0%, transparent 50%),
+      radial-gradient(ellipse at 85% 80%, hsl(160 50% 15% / 0.3) 0%, transparent 45%),
+      radial-gradient(1px 1px at 20% 30%, hsl(0 0% 100% / 0.15) 1px, transparent 0),
+      radial-gradient(1px 1px at 40% 70%, hsl(0 0% 100% / 0.1) 1px, transparent 0),
+      radial-gradient(1px 1px at 60% 20%, hsl(0 0% 100% / 0.12) 1px, transparent 0),
+      radial-gradient(1px 1px at 80% 50%, hsl(0 0% 100% / 0.08) 1px, transparent 0);
+    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 200px 200px, 300px 300px, 250px 250px, 350px 350px;
     background-attachment: fixed;
   }
 
