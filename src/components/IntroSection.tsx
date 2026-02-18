@@ -12,7 +12,7 @@ const item = {
 
 const cards = [
   { emoji: "🎮", title: "Main Game", desc: "Minecraft Java Edition" },
-  { emoji: "⚔️", title: "IGN", desc: "Vortz_" },
+  { emoji: "⚔️", title: "IGN", desc: "Vorz_" },
   { emoji: "🏹", title: "Specialty", desc: "Sword & SMP PvP" },
 ];
 
