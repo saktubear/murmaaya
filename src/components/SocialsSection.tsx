@@ -5,7 +5,7 @@ const socials = [
   { name: "YouTube", url: "https://www.youtube.com/@saktu_bear", icon: Youtube, color: "text-red-500", description: "@saktu_bear" },
   { name: "Discord", url: "https://discord.gg/dEbR7TyMSj", icon: MessageCircle, color: "text-indigo-500", description: "Join the crew" },
   { name: "Instagram", url: "https://www.instagram.com/_saktu_/", icon: Instagram, color: "text-pink-500", description: "@_saktu_" },
-  { name: "NameMC", url: "https://namemc.com/profile/Vorz_.1", icon: Gamepad2, color: "text-emerald-500", description: "Vortz_" },
+  { name: "NameMC", url: "https://namemc.com/profile/Vorz_.1", icon: Gamepad2, color: "text-emerald-500", description: "Vorz_" },
 ];
 
 const SocialsSection = () => {
