@@ -108,22 +108,12 @@ All colors MUST be HSL.
   }
 
   .dark body {
-    background-color: hsl(240 20% 8%);
-    background-image: 
-      radial-gradient(ellipse at 15% 10%, hsl(270 60% 25% / 0.4) 0%, transparent 50%),
-      radial-gradient(ellipse at 80% 20%, hsl(200 70% 20% / 0.35) 0%, transparent 45%),
-      radial-gradient(ellipse at 50% 70%, hsl(330 50% 20% / 0.3) 0%, transparent 50%),
-      radial-gradient(ellipse at 85% 80%, hsl(160 50% 15% / 0.3) 0%, transparent 45%),
-      radial-gradient(1px 1px at 20% 30%, hsl(0 0% 100% / 0.15) 1px, transparent 0),
-      radial-gradient(1px 1px at 40% 70%, hsl(0 0% 100% / 0.1) 1px, transparent 0),
-      radial-gradient(1px 1px at 60% 20%, hsl(0 0% 100% / 0.12) 1px, transparent 0),
-      radial-gradient(1px 1px at 80% 50%, hsl(0 0% 100% / 0.08) 1px, transparent 0);
-    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 200px 200px, 300px 300px, 250px 250px, 350px 350px;
-    background-attachment: fixed;
+    background-color: hsl(0 0% 7%);
+    background-image: none;
   }
 
   .dark {
-    --background: 240 20% 8%;
+    --background: 0 0% 7%;
     --foreground: 220 20% 95%;
 
     --card: 240 15% 13%;
