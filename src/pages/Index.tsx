@@ -6,10 +6,12 @@ import MinecraftSection from "@/components/MinecraftSection";
 import SocialsSection from "@/components/SocialsSection";
 import CursorTrail from "@/components/CursorTrail";
 import Snowflakes from "@/components/Snowflakes";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const Index = () => {
   return (
     <div className="min-h-screen animate-fade-in">
+      <SmoothScroll />
       <CursorTrail />
       <Snowflakes />
       <Header />
