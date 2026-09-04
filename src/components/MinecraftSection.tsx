@@ -4,7 +4,7 @@ import { WalkingAnimation } from "skinview3d";
 import panCape from "@/assets/pan-cape.png";
 
 const tiers = [
-  { mode: "Diamond SMP", rank: "HT5", active: true },
+  { mode: "Diamond SMP", rank: "LT4", active: true },
   { mode: "SMP PvP", rank: "N/A", active: false },
   { mode: "Sword PvP", rank: "N/A", active: false },
   { mode: "Bow PvP", rank: "HT5", active: true },
@@ -34,7 +34,7 @@ const MinecraftSection = () => {
         >
           <div className="w-48 h-64 mb-6">
             <ReactSkinview3d
-              skinUrl="https://minotar.net/skin/Vorz_"
+              skinUrl="https://minotar.net/skin/murmaaya"
               capeUrl={panCape}
               height={256}
               width={192}
@@ -48,7 +48,7 @@ const MinecraftSection = () => {
               className="rounded-xl"
             />
           </div>
-          <h3 className="text-2xl font-bold mb-2">Vorz_</h3>
+          <h3 className="text-2xl font-bold mb-2">murmaaya</h3>
           <p className="text-sm text-muted-foreground mb-4">Main pvp kits</p>
           <div className="flex flex-wrap gap-3 justify-center">
             {["SMP", "Mace", "Sword", "UHC"].map((kit, i) => (

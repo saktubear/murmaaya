@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { toast } from "sonner";
@@ -77,16 +77,6 @@ const Contact = () => {
                     <h3 className="font-semibold mb-1">Email</h3>
                     <p className="text-muted-foreground">hello@saktu.gg</p>
                     <p className="text-muted-foreground text-sm">We'll respond within 24 hours</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-1">Discord</h3>
-                    <p className="text-muted-foreground">discord.gg/saktu</p>
-                    <p className="text-muted-foreground text-sm">Join our community server</p>
                   </div>
                 </div>
               </div>
