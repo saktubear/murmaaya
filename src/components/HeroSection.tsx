@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import TypewriterText from "@/components/TypewriterText";
+
 import logoImg from "@/assets/logo.png";
 
 const floatingParticles = Array.from({ length: 12 }, (_, i) => ({
