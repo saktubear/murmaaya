@@ -74,7 +74,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          16 y/o · <TypewriterText />
+          16 y/o · A Minecraft PvPer
         </motion.p>
         <motion.div
           className="flex flex-col sm:flex-row gap-4"
