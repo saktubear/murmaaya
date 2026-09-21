@@ -34,7 +34,7 @@ const MinecraftSection = () => {
         >
           <div className="w-48 h-64 mb-6">
             <ReactSkinview3d
-              skinUrl="https://minotar.net/skin/murmaaya"
+              skinUrl="https://minotar.net/skin/SkyInSilence"
               capeUrl={panCape}
               height={256}
               width={192}
@@ -48,10 +48,10 @@ const MinecraftSection = () => {
               className="rounded-xl"
             />
           </div>
-          <h3 className="text-2xl font-bold mb-2">murmaaya</h3>
+          <h3 className="text-2xl font-bold mb-2">SkyInSilence</h3>
           <p className="text-sm text-muted-foreground mb-4">Main pvp kits</p>
           <div className="flex flex-wrap gap-3 justify-center">
-            {["SMP", "Mace", "Sword", "UHC"].map((kit, i) => (
+            {["SMP", "Mace", "Sword", "Spearmace", "UHC"].map((kit, i) => (
               <motion.span
                 key={kit}
                 className="px-4 py-2 rounded-full text-sm font-medium bg-muted"

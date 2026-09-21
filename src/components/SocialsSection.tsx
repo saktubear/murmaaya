@@ -4,7 +4,7 @@ import { Youtube, Instagram, MessageCircle, Gamepad2 } from "lucide-react";
 const socials = [
   { name: "YouTube", url: "https://www.youtube.com/@saktu_bear", icon: Youtube, color: "text-red-500", description: "@saktu_bear" },
   { name: "Instagram", url: "https://www.instagram.com/_saktu_/", icon: Instagram, color: "text-pink-500", description: "@_saktu_" },
-  { name: "NameMC", url: "https://namemc.com/profile/murmaaya.1", icon: Gamepad2, color: "text-emerald-500", description: "murmaaya" },
+  { name: "NameMC", url: "https://namemc.com/profile/SkyInSilence.1", icon: Gamepad2, color: "text-emerald-500", description: "SkyInSilence" },
 ];
 
 const SocialsSection = () => {
